@@ -1,0 +1,507 @@
+body{
+    /* background-color: rgb(4, 4, 115); */
+    background-image: url("../pics/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-attachment: fixed;
+     height: 500vh;
+     padding: 0;
+     margin: 0;
+     scroll-behavior: smooth;
+}
+.page{
+    height:260px;
+    width:200px;
+    position: absolute;
+    left: 360px;
+    top:0px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: aqua;
+    transition: all 1s ease-in-out;
+    transform: scale(0.1) translateY(-500px) ;
+     z-index: 1000;
+    opacity: 0;
+}
+.page img{
+margin-top: 15px;
+border-radius: 50%;
+object-fit: cover;
+}
+.page span{
+   
+    position: relative;
+    top: 10px;
+    color: rgb(13, 13, 236);
+}
+.page button{
+    background-color: rgb(71, 8, 130);
+    margin-top: 26px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    color: rgb(7, 224, 235);
+
+}
+.page.hide{
+   opacity: 1;
+    transform: scale(1) translateY(80px);
+     
+}
+#text{
+    font-family:monospace;
+    font-size: 20px;
+}
+#bt{
+   position: relative; 
+   top: -5px;
+}
+#body1{
+   position: fixed;
+  z-index: 100;
+}
+::-webkit-scrollbar{
+  
+   
+   width: 8px;
+  
+    
+}
+::-webkit-scrollbar-track{
+    /* background: transparent; */
+    
+    background: rgb(1, 1, 77);
+ 
+  
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to top,rgb(76, 202, 248),rgb(243, 97, 97));
+    border-radius: 10px; 
+    border: 2px solid transparent;
+    background-clip: content-box; 
+}
+.type{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    border-right: 3px solid;
+    width:32%;
+    white-space: nowrap;
+    overflow: hidden;
+    color:rgb(12, 209, 235) ;
+animation: ani 3s,cursor .6s step-end infinite;
+}
+
+@keyframes ani {
+
+    from {width:0}
+    
+}
+
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+@keyframes an {
+    to {width:0}
+}
+.card{
+    padding: 5px;
+    position: absolute;
+    top:100px;
+    left: 100px;
+    width: 170vh; 
+    height:100px;
+    font-size: 19px;
+    border: none;
+    transform: scale(0.1);
+    background-color: transparent;
+    opacity: 0;
+    transition: all 3s ease-in-out ;
+}
+.card #te{
+    text-shadow: 1px 0 3px rgb(13, 230, 158);
+    color: rgb(250, 249, 250);
+}
+.card font{
+color:black;   
+
+ background: linear-gradient(30deg,orange,rgb(0, 225, 255),yellow,green,red);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+   
+    -webkit-text-stroke: 2px transparent;
+    animation: tex 6s linear infinite;
+}
+
+@keyframes tex {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400px 0;
+    }
+ 100%{
+    background-position: 0 0;
+}}
+.card.hide{
+    opacity: 1;
+    transform:scale(1) translateY(100px);
+}
+
+.card1{
+    padding: 5px;
+    position: absolute;
+    top:430px;
+    left: 100px;
+    width: 170vh; 
+    height:100px;
+    font-size: 19px;
+    border: none;
+    transform: scale(0.1);
+    background-color: transparent;
+    opacity: 0;
+    transition: all 3s ease-in-out ;
+}
+.card1 #te{
+    text-shadow: 1px 0 3px rgb(13, 230, 158);
+    color: rgb(250, 249, 250);
+}
+.card1 font{
+color:black;   
+
+ background: linear-gradient(30deg,orange,rgb(0, 225, 255),yellow,green,red);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+   
+    -webkit-text-stroke: 2px transparent;
+    animation: tex 6s linear infinite;
+}
+
+@keyframes tex {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400px 0;
+    }
+ 100%{
+    background-position: 0 0;
+}}
+.card1.hide{
+    opacity: 1;
+    transform:scale(1) translateY(60px);
+}
+
+.card2{
+    padding: 5px;
+    position: absolute;
+    top:400px;
+    left: 100px;
+    width: 170vh; 
+    height:100px;
+    font-size: 19px;
+    border: none;
+    transform: scale(0.1);
+    background-color: transparent;
+    opacity: 0;
+    transition: all 3s ease-in-out ;
+}
+.card2 #te{
+    text-shadow: 1px 0 3px rgb(13, 230, 158);
+    color: rgb(250, 249, 250);
+}
+.card2 font{
+color:black;   
+
+ background: linear-gradient(30deg,orange,rgb(251, 0, 255),rgb(0, 255, 42),rgb(128, 0, 26),rgb(255, 242, 0));
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+   
+    -webkit-text-stroke: 2px transparent;
+    animation: tex1 7s linear infinite;
+}
+
+@keyframes tex1 {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: -400px 0;
+    }
+ 100%{
+    background-position: 0 0;
+}}
+.card2.hide{
+    opacity: 1;
+    transform:scale(1) translateY(100px);
+}
+
+
+.next1{
+    position: absolute;
+ top: 190vh;
+ left: 60px;
+ width:190vh;
+ height: 300px;
+ background-color:transparent;
+   cursor: pointer;
+ backdrop-filter: blur(8px);
+ padding: 10px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 25px;
+   border: 2px solid lightgreen;
+   transition:all 0.3s ease-in-out; 
+      
+}
+
+.next1 img{
+    object-fit: right;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border: 4px solid transparent;
+    /* box-shadow: 5px 3px 10px whitesmoke; */
+    /* filter: drop-shadow(5px 3px 10px whitesmoke); */
+    background: linear-gradient(30deg,cyan,white) padding-box,linear-gradient(30deg,rgb(10, 10, 241),rgb(0, 119, 255),rgb(44, 193, 210)) border-box;
+
+
+}
+.next2{
+    position: absolute;
+    top: 270vh;
+    left: 60px;
+    width:190vh;
+    height: 300px;
+    background-color:transparent;
+      cursor: pointer;
+    backdrop-filter: blur(8px);
+border: 2px solid limegreen;
+       height: 300px;
+       border-radius: 20px;
+       padding: 25px;
+      transition:all 0.3s ease-in-out; 
+
+}
+.next2 img{
+    object-fit:cover;
+background-position: top;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border: 4px solid transparent;
+    background: linear-gradient(30deg,cyan,white) padding-box,linear-gradient(30deg,rgb(10, 241, 164),rgb(0, 119, 255),rgb(44, 193, 210)) border-box;
+
+}
+.next2 span{
+    color: aqua;
+    position: absolute;
+    padding: 20px 50px;
+    width: 500px;
+    height: 80px;
+}
+.next1 span{
+    color: aqua;
+    font-size: 15px;
+    position: absolute;
+    margin-top: -10px;
+    padding-left: 35px;
+    width: 550px;
+    height: 100px;
+}
+@keyframes ro {
+    50%{
+        transform: rotate(720deg);
+    }
+   
+}
+
+.next1:hover{
+    filter: drop-shadow(5px 7px 10px rgb(73, 130, 228));
+    text-shadow: 5px 2px 5px rgb(118, 231, 231);
+}
+.next2:hover{
+    filter: drop-shadow(5px 7px 10px rgb(73, 130, 228));
+    text-shadow: 5px 2px 5px rgb(118, 231, 231);
+  
+}
+#tx{
+    position: absolute;
+    top: 346vh;
+    left: 20px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    text-shadow: 5px 0px 5px rgb(5, 252, 252);
+}
+.im{
+    position: absolute;
+    left: 750px;
+    top: 80px;
+    width: 160px;
+    height: 160px;
+    border-radius: 40px;
+   /* border: 2px solid transparent; */
+    /* background: linear-gradient(30deg,rgb(9, 9, 9),rgb(12, 12, 12)) padding-box,linear-gradient(30deg,red,green) border-box; */
+/* border-image: linear-gradient(10deg,red,blue) 1; */
+}
+.im::before{
+    content: "";
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(30deg,rgb(242, 0, 255),blue,rgb(6, 242, 246)) ;
+    animation:13s ro linear infinite ;
+}
+.im::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(75, 73, 73);
+inset: 11px;
+}
+.img2{
+    position: absolute;
+    top: 90px;
+    left: 760px;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    z-index: 100;
+}
+#cont{
+    position: absolute;
+    top: 500vh;
+    left: 30vh;
+    width: 700px;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(19, 165, 228);
+   
+   opacity: 1;
+   
+}
+.co{
+    background-color: aquamarine;
+    width: 200px;
+    position: absolute;
+    left: 245px;
+    top: -17px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: poppins,sans-serif;
+    padding: 5px 0px 5px 55px;
+}
+#icon{
+    width: 320px;
+ position: relative;
+      top: 125px;
+      left: 125px;
+      
+     cursor: pointer;
+     border: none;
+     display: flex;
+     text-align: center;
+      transform: scale(1);
+      translate:  60px 51px;
+      transition: 1s ease-in-out;
+      opacity: 0;
+ }
+ #icon i{
+     font-size: 25px;
+     height: 38px;
+     width: 38px;
+     background-color: rgb(20, 20, 20);
+      
+      line-height: 33px;
+      margin:0 14px ;
+     display: block;
+     border-radius: 50%;
+      color: rgb(130, 130, 128);
+      border: 2px solid beige;
+     box-shadow: 0px 0px 6px whitesmoke;
+     transition: .3s ease-in-out;
+ }
+ #icon #a{
+    color: skyblue;
+ } 
+ #icon #b{
+    color: rgb(225, 30, 163);
+ }
+ #icon #c{
+    color: rgb(27, 195, 111);
+ }
+ #icon #d{
+    color: rgb(210, 20, 67);
+ }
+ #icon #e{
+    color: rgb(16, 16, 158);
+ }
+ #icon #a:hover{
+     border-color: rgb(8, 152, 241);
+     box-shadow: 0px 0px 15px rgb(8, 152, 241);
+     color: rgb(41, 152, 243);
+ }
+ #icon #b:hover{
+     border-color:rgb(241, 8, 124) ;
+     box-shadow: 0px 0px 15px rgb(241, 8, 124);
+     color: rgb(243, 41, 125);
+ }
+ #icon #c:hover{
+     border-color: rgb(8, 241, 16);
+     box-shadow: 0px 0px 15px rgb(8, 241, 27);
+     color: rgb(41, 243, 61);
+ }
+ #icon #d:hover{
+     border-color: rgb(241, 8, 74);
+     box-shadow: 0px 0px 15px rgb(241, 8, 74);
+     color: rgb(243, 41, 65);
+ }
+ #icon #e:hover{
+     border-color: rgb(25, 91, 133);
+     box-shadow: 0px 0px 15px rgb(25, 91, 133);
+     color: rgb(27, 81, 125);
+ }
+
+ .le{
+    position: absolute;
+    top: 19px;
+    margin-left: 2px;
+ }
+ .le span{
+    padding: 0 10px;
+    font-weight: bold;
+    color: rgb(168, 112, 16);
+ }
+#tex2{
+    position: absolute;
+    left: 210px;
+}
+#tex3{
+    position: absolute;
+    left: 485px;
+    width:200px ;
+   
+}
+#q{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    width: 500px;
+}
+.b{
+    position: absolute;
+    left: 540px;
+    top: 78px;
+}
